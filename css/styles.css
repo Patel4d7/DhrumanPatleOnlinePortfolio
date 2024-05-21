@@ -1,1 +1,214 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+header {
+    background: linear-gradient(135deg, #ff6b6b, #f06595);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.email {
+    color: #ffffff;
+}
+
+.linkedin {
+    color: #0077b5;  /* LinkedIn blue color */
+}
+
+nav {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff6b6b;
+}
+
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6b6b;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 0.5rem;
+}
+
+.experience h3 {
+    margin: 0;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+canvas {
+    display: block;
+    margin: 2rem auto;
+}
+
+.profile-picture {
+    display: block;
+    margin: 1rem auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-thumbnail {
+    display: inline-block;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.project-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure image fits within the defined size */
+}
+
+.git-section {
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff6b6b;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-event {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-event::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ff6b6b;
+    border: 4px solid #ff6b6b;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-event.left {
+    left: 0;
+}
+
+.timeline-event.right {
+    left: 50%;
+}
+
+.timeline-event .timeline-content {
+    padding: 20px 30px;
+    background-color: #ff6b6b;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-event.left .timeline-content {
+    margin-left: 90px;
+}
+
+.timeline-event.right .timeline-content {
+    margin-left: -90px;
+}
+
+.timeline-event .timeline-content h3 {
+    color: #fff;
+}
+
+.timeline-event .timeline-content p {
+    color: #fff;
+}
