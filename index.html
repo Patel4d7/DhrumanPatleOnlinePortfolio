@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruman Patel's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1><i class="material-icons">account_circle</i> Dhruman Patel</h1>
+        <p><i class="material-icons">code</i> Software Developer</p>
+        <p><i class="material-icons">location_on</i> Cincinnati, OH</p>
+        <p>
+            <a class="email" href="mailto:patel4d7@mail.uc.edu"><i class="material-icons">email</i> patel4d7@mail.uc.edu</a> | 
+            <i class="material-icons">phone</i> 636-891-4452 | 
+            <a class="linkedin" href="https://www.linkedin.com/in/dhrumanpatel/"><i class="material-icons">linkedin</i> LinkedIn</a>
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#summary"><i class="material-icons">info</i> Summary</a></li>
+            <li><a href="#experience"><i class="material-icons">work</i> Experience</a></li>
+            <li><a href="#education"><i class="material-icons">school</i> Education</a></li>
+            <li><a href="#achievements"><i class="material-icons">star</i> Achievements</a></li>
+            <li><a href="#skills"><i class="material-icons">build</i> Skills</a></li>
+            <li><a href="#strengths"><i class="material-icons">emoji_events</i> Strengths</a></li>
+            <li><a href="#projects"><i class="material-icons">folder</i> Projects</a></li>
+            <li><a href="#git-achievements"><i class="material-icons">code</i> Git Achievements</a></li>
+        </ul>
+    </nav>
+    <section id="summary" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">info</i> Summary</h2>
+        <img src="img/profile.jpg" alt="Profile Picture" class="profile-picture">
+        <p>A dedicated and innovative software developer with over 5 years of experience in developing applications and backend systems. Skilled in writing clean and efficient code that is easy to maintain and troubleshoot. Proven ability to work independently and as part of a team, delivering projects that exceed expectations in both remote and in-office settings.</p>
+    </section>
+    <section id="experience" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">work</i> Professional Experience</h2>
+        <div class="experience">
+            <h3>Enterprise Application Engineer</h3>
+            <p>Siemens, Milford, OH</p>
+            <p>August 2023 - December 2023</p>
+            <ul>
+                <li>Developed comprehensive applications that streamlined operations, reducing error rates by 25%.</li>
+                <li>Integrated Siemens infrastructure applications, enhancing data flow and communication.</li>
+                <li>Optimized database performance with efficient SQL queries, stored procedures, and functions.</li>
+                <li>Implemented clean, efficient code in React, Python, and SQL, improving processing time by 40%.</li>
+            </ul>
+            <h4>Learnings:</h4>
+            <ul>
+                <li>Advanced SQL optimization techniques.</li>
+                <li>Integration of complex systems.</li>
+                <li>Best practices in clean code and efficiency.</li>
+            </ul>
+            <canvas id="siemensChart"></canvas>
+        </div>
+        <div class="experience">
+            <h3>IT Operations & Infrastructure Associate</h3>
+            <p>Phillips Edison & Company, Mason, OH</p>
+            <p>May 2023 - August 2023</p>
+            <ul>
+                <li>Designed and deployed innovative systems, increasing operational efficiency by 25%.</li>
+                <li>Developed reusable software components, reducing development effort by 50%.</li>
+                <li>Implemented automated tools, reducing network downtime by 40%.</li>
+            </ul>
+            <h4>Learnings:</h4>
+            <ul>
+                <li>Infrastructure design and deployment.</li>
+                <li>Automation for network optimization.</li>
+                <li>Efficient software component reuse.</li>
+            </ul>
+            <canvas id="phillipsChart"></canvas>
+        </div>
+        <div class="experience">
+            <h3>DevOps Engineer</h3>
+            <p>Cincinnati Insurance Company, Fairfield, OH</p>
+            <p>January 2022 - April 2022</p>
+            <ul>
+                <li>Engineered scalable cloud infrastructure, reducing operational costs by 25% and improving system performance by 40%.</li>
+                <li>Implemented configuration management tools, saving 25% of initial machine setup time.</li>
+                <li>Designed and developed scalable applications, increasing user retention by 35%.</li>
+                <li>Unified disparate internal systems with custom software tools.</li>
+                <li>Tested, debugged, and refined code to improve functionality and user experience.</li>
+            </ul>
+            <h4>Learnings:</h4>
+            <ul>
+                <li>Cloud infrastructure scaling.</li>
+                <li>Configuration management tools.</li>
+                <li>User retention through application design.</li>
+            </ul>
+            <canvas id="cincinnatiChart"></canvas>
+        </div>
+        <div class="experience">
+            <h3>IT Service Desk Technician</h3>
+            <p>University of Cincinnati Technology, Clifton, OH</p>
+            <p>August 2022 - December 2022</p>
+            <ul>
+                <li>Resolved software and hardware issues in collaboration with cross-functional teams.</li>
+                <li>Conducted bi-weekly system audits, reducing cybersecurity vulnerabilities by 25%.</li>
+                <li>Optimized IT tool usability through user feedback loops.</li>
+            </ul>
+            <h4>Learnings:</h4>
+            <ul>
+                <li>Cross-functional team collaboration.</li>
+                <li>System auditing and cybersecurity.</li>
+                <li>Usability optimization through feedback.</li>
+            </ul>
+            <canvas id="ucTechChart"></canvas>
+        </div>
+    </section>
+    <section id="education" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">school</i> Education</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h3><i class="material-icons">book</i> Bachelor of Science, Software Development</h3>
+                    <p>The University of Cincinnati, College of Information Technology</p>
+                    <p>2019 - 2024</p>
+                    <p>GPA: 3.742</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h3><i class="material-icons">book</i> Parkway Central High School</h3>
+                    <p>St. Louis, MO</p>
+                    <p>2016 - 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">star</i> Professional Achievements</h2>
+        <ul>
+            <li>Spearheaded a complex software project at Siemens, leading a 12-person team from design to distribution.</li>
+            <li>Improved query efficiency by 30% at Phillips Edison and Company by redesigning MySQL databases.</li>
+            <li>Consistently made the Dean's List from 2019 to 2024.</li>
+            <li>Developed a chatbot at Siemens, reducing customer service costs by 240%.</li>
+        </ul>
+    </section>
+    <section id="skills" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">build</i> Technical Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, C++, C#, Python, JavaScript, Kotlin, .NET, Dart, Swift, React, Ansible, Powershell, Google Go, HTML, CSS, AngularJS, ASP.NET.</li>
+            <li>Databases: SQL Server, MySQL, Google Cloud, AWS, Microsoft Azure, Power BI, PostgreSQL, Amazon Redshift, Google BigQuery.</li>
+            <li>Systems: Eclipse, Android Studio, Flutter, Visual Studio, Windows (Client & Server), iOS, CentOS, UNIX/Linux Command.</li>
+            <li>Certifications: Microsoft Azure, Google Operating Systems, Google Cloud Computing, Linux.</li>
+            <li>Networking: AD DS, VMs, RDS, AVD, Hubs, Routers, Switches, Ethernet, IP, LAN.</li>
+        </ul>
+        <canvas id="skillsChart"></canvas>
+    </section>
+    <section id="strengths" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">emoji_events</i> Strengths</h2>
+        <ul>
+            <li>Vice President of University of Cincinnati IT Proud, awarded a gold medal for empowering students to adapt knowledge in the ever-evolving field of technology.</li>
+            <li>Volunteered in the CSR team for Amadeus, organizing tuition platforms for the underprivileged and designing confluence pages for book drives.</li>
+        </ul>
+    </section>
+    <section id="projects" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">folder</i> Academic Projects</h2>
+        <ul>
+            <li>Developed a core website for the university sports team using ASP.NET MVC.</li>
+            <li>Applied best practices to create a scalable Android application for Mobile Device Programming.</li>
+            <li>Led the design and development of the innovative application "Nexus" using React for the Senior Capstone Project.</li>
+        </ul>
+        <canvas id="projectsChart"></canvas>
+    </section>
+    <section id="git-achievements" class="animate__animated animate__fadeInUp">
+        <h2><i class="material-icons">code</i> Git Achievements</h2>
+        <div class="git-section">
+            <h3><i class="material-icons">games</i> Game Project</h3>
+            <div class="project-thumbnail" data-toggle="modal" data-target="#projectModal1">
+                <img src="img/game2.png" alt="Game Project">
+                <p>Game Project - Tic Tac Toe</p>
+            </div>
+        </div>
+        <div class="git-section">
+            <h3><i class="material-icons">directions_bus</i> Nexus Project</h3>
+            <div class="project-thumbnail" data-toggle="modal" data-target="#projectModal2">
+                <img src="img/nexus1.jpeg" alt="Nexus Project">
+                <p>Nexus Project - Shuttle Finder</p>
+            </div>
+        </div>
+        <!-- Modal 1 -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel1">Game Project - Tic Tac Toe</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/Gamecode.png" alt="Game Code" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/game2.png" alt="Game Output" class="img-fluid">
+                            </div>
+                        </div>
+                        <p>This project involved creating a Tic Tac Toe game using HTML, CSS, and JavaScript. Key Git functionalities used included branching for feature development, merging branches, and version control for tracking changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel2">Nexus Project - Shuttle Finder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/Nexuscode.png" alt="Nexus Code" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/nexus1.jpeg" alt="Nexus Output 1" class="img-fluid">
+                                <img src="img/nexus2.PNG" alt="Nexus Output 2" class="img-fluid">
+                                <img src="img/nexus3.png" alt="Nexus Output 3" class="img-fluid">
+                            </div>
+                        </div>
+                        <p>This project involved developing a shuttle finder application called Nexus. Key Git functionalities used included branching for feature development, pull requests for code review, and version control for tracking changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Dhruman Patel | <a href="https://github.com/Patel4d7" target="_blank"><i class="material-icons">github</i> GitHub</a></p>
+    </footer>
+</body>
+</html>
